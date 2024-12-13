@@ -23,24 +23,28 @@
     padding: 5px;
     overflow: hidden;
     text-align: center;
+    transition: color 0.3s ease-in-out;
 }
+
 
 .navbar a::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 0;
+    width: 0%;
     height: 2px;
-    background-color: black;
+    background-color: #ff6347;
     transition: width 0.3s ease-in-out;
 }
 
-.navbar a:hover::after,
-.navbar a.estaativo::after {
+.navbar a:hover::after {
     width: 100%;
 }
 
+.navbar a:hover {
+    color: #ff6347;
+}
 
 
 .nav {

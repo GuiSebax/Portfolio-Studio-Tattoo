@@ -13,7 +13,7 @@ const NavBar = () => {
             className={({ isActive }) =>
               isActive ? styles.estaativo : styles.naoestaativo
             }
-            to="/Home"
+            to="/tattoo/?p=home"
           >
             Home
           </NavLink>
@@ -23,7 +23,7 @@ const NavBar = () => {
             className={({ isActive }) =>
               isActive ? styles.estaativo : styles.naoestaativo
             }
-            to="/colour"
+            to="/tattoo/?p=colour"
           >
             Trabalhos
           </NavLink>
@@ -33,7 +33,7 @@ const NavBar = () => {
             className={({ isActive }) =>
               isActive ? styles.estaativo : styles.naoestaativo
             }
-            to="/about"
+            to="/tattoo/?p=about"
           >
             Sobre
           </NavLink>
@@ -43,7 +43,7 @@ const NavBar = () => {
             className={({ isActive }) =>
               isActive ? styles.estaativo : styles.naoestaativo
             }
-            to="/contact"
+            to="/tattoo/?p=contact"
           >
             Contato
           </NavLink>
@@ -53,7 +53,7 @@ const NavBar = () => {
             className={({ isActive }) =>
               isActive ? styles.estaativo : styles.naoestaativo
             }
-            to="/news"
+            to="/tattoo/?p=news"
           >
             Novidades
           </NavLink>

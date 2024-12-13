@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, useSearchParams } from "react-router-dom";
 // Pages
 import Home from "./pages/Home/Home";
 import Colour from "./pages/Colour/Colour";
@@ -11,18 +11,32 @@ import News from "./pages/News/News";
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 
+function QueryRouter() {
+  const [searchParams] = useSearchParams();
+  const page = searchParams.get("p");
+
+  switch (page) {
+    case "home":
+      return <Home />;
+    case "colour":
+      return <Colour />;
+    case "about":
+      return <About />;
+    case "contact":
+      return <Contact />;
+    case "news":
+      return <News />;
+    default:
+      return <Home />;
+  }
+}
+
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <NavBar />
-        <Routes>
-          <Route path="/tattoo/Home" element={<Home />} />
-          <Route path="/tattoo/colour" element={<Colour />} />
-          <Route path="/tattoo/about" element={<About />} />
-          <Route path="/tattoo/contact" element={<Contact />} />
-          <Route path="/tattoo/news" element={<News />} />
-        </Routes>
+        <QueryRouter />
         <Footer />
       </BrowserRouter>
     </div>
