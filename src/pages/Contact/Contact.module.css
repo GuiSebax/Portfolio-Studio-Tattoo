@@ -1,0 +1,89 @@
+.contactContainer {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .formGroup label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .formGroup input,
+  .formGroup textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .submitButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .submitButton:hover {
+    background-color: #555;
+  }
+  
+  .contactInfo {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #666;
+  }
+
+  /* Media query para telas menores */
+@media (max-width: 768px) {
+  .title {
+      font-size: 2rem;
+  }
+
+  .description {
+      font-size: 1rem;
+  }
+
+  .formGroup input,
+  .formGroup textarea {
+      font-size: 0.9rem;
+  }
+
+  .submitButton {
+      font-size: 0.9rem;
+  }
+
+  .contactInfo {
+      font-size: 0.9rem;
+  }
+}

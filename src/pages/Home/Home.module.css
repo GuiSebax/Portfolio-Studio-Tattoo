@@ -1,0 +1,31 @@
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    text-align: center;
+    padding: 10px;
+}
+  
+.welcomeMessage {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+  
+.introText {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    .welcomeMessage {
+        font-size: 2rem;
+    }
+
+    .introText {
+        font-size: 1.2rem;
+    }
+}
