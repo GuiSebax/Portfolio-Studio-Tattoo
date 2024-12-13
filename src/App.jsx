@@ -17,11 +17,11 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route path="/Home" element={<Home />} />
-          <Route path="/colour" element={<Colour />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/news" element={<News />} />
+          <Route path="/tattoo/Home" element={<Home />} />
+          <Route path="/tattoo/colour" element={<Colour />} />
+          <Route path="/tattoo/about" element={<About />} />
+          <Route path="/tattoo/contact" element={<Contact />} />
+          <Route path="/tattoo/news" element={<News />} />
         </Routes>
         <Footer />
       </BrowserRouter>
