@@ -29,3 +29,13 @@
     color: #666;
     margin-bottom: 20px;
   }
+
+  @media (min-width: 810px) and (max-width: 1080px) {
+    .aboutContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; 
+      height: 65vh;
+    }
+  }

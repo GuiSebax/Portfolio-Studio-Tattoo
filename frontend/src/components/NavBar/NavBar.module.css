@@ -107,3 +107,13 @@
         padding: 8px;
     }
 }
+
+@media (min-width: 810px) and (max-width: 1080px) {
+   
+    /* NavBAr na horizoontal com wrap no centro */
+    .navbar {
+        flex-direction: row;
+        width: 80%;
+    }
+  
+  }
