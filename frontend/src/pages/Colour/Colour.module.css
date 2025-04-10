@@ -1,54 +1,68 @@
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 480px);
-    gap: 20px;
-    padding: 20px;
-    margin: 0 auto;
-  }
-  
-  .imageContainer {
-    overflow: hidden;
-    position: relative;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 0.5s forwards;
-    animation-delay: calc(0.1s * var(--animation-order));
-    height: 300px; /* Defina uma altura fixa para os contêineres de imagem */
-  }
-  
-  .image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ajuste a imagem para cobrir completamente o contêiner */
-    display: block;
-    transition: transform 0.3s ease-in-out;
-    border-radius: 20px;
-    
-  }
-  
-  .image:hover {
-    transform: scale(1.1);
-  }
-  
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-      border-radius: 20px;
-      
-    }
-  }
-
-  /* Media query para telas menores */
-@media (max-width: 768px) {
-  .gallery {
-      grid-template-columns: repeat(2, 1fr);
-  }
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Ajusta automaticamente o número de colunas */
+  gap: 16px;
+  padding: 16px;
+  margin: 0 auto;
 }
 
-@media (min-width: 810px) and (max-width: 1080px) {
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  animation: fadeIn 0.5s ease-in-out; /* Animação de fade-in */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.image {
+  width: 100%;
+  height: 150px; /* Altura menor */
+  object-fit: cover;
+  display: block;
+}
+
+.cardContent {
+  padding: 12px;
+}
+
+.cardContent h3 {
+  margin: 0 0 8px;
+  font-size: 16px; /* Tamanho menor para o título */
+}
+
+.cardContent p {
+  margin: 0;
+  color: #666;
+  font-size: 12px; /* Tamanho menor para o texto */
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
+}
 
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr; /* Apenas uma coluna em telas muito pequenas */
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

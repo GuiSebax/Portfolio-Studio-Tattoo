@@ -28,12 +28,16 @@ const Colour = () => {
         <p>Carregando imagens...</p>
       ) : (
         tattoos.map((tattoo, index) => (
-          <div key={index} className={styles.imageContainer}>
+          <div key={index} className={styles.card}>
             <img
               src={tattoo}
               alt={`Tattoo ${index + 1}`}
               className={styles.image}
             />
+            <div className={styles.cardContent}>
+              <h3>Tattoo {index + 1}</h3>
+              <p>Descrição ou detalhes da tatuagem podem ir aqui.</p>
+            </div>
           </div>
         ))
       )}
