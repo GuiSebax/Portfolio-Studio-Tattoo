@@ -1,70 +1,83 @@
 .contactContainer {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .title {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .description {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 20px;
-  }
-  
-  .contactForm {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-bottom: 20px;
-  }
-  
-  .formGroup {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-  }
-  
-  .formGroup label {
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  .formGroup input,
-  .formGroup textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-  
-  .submitButton {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #333;
-    color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .submitButton:hover {
-    background-color: #555;
-  }
-  
-  .contactInfo {
-    margin-top: 20px;
-    font-size: 1rem;
-    color: #666;
-  }
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background: transparent;
+  color: #c28840; /* Texto dourado */
+}
 
-  /* Media query para telas menores */
+.formGroup select {
+  padding: 10px;
+  border: 1px solid #c28840;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+.title {
+  font-size: 2.5rem;
+  color: #c28840; /* Título dourado */
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #c28840; /* Texto dourado */
+  margin-bottom: 20px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.formGroup label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #c28840; /* Texto dourado */
+}
+
+.formGroup input,
+.formGroup textarea {
+  padding: 10px;
+  border: 1px solid #c28840; /* Borda dourada */
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #111; /* Fundo preto mais claro */
+  color: #c28840; /* Texto dourado */
+}
+
+.submitButton {
+  padding: 10px 20px;
+  border: 1px solid #c28840; /* Borda dourada */
+  border-radius: 5px;
+  background-color: transparent; /* Fundo preto */
+  color: #c28840; /* Texto dourado */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.submitButton:hover {
+  background-color: #c28840; /* Fundo dourado */
+  color: #000; /* Texto preto */
+}
+
+.contactInfo {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #c28840; /* Texto dourado */
+}
+
+/* Media query para telas menores */
 @media (max-width: 768px) {
   .title {
       font-size: 2rem;
@@ -86,4 +99,44 @@
   .contactInfo {
       font-size: 0.9rem;
   }
+}
+
+.customSelect {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Ajusta o número de colunas automaticamente */
+  gap: 15px; /* Espaçamento entre os itens */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  background-color: #111; /* Fundo preto mais claro */
+  border-radius: 5px;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}
+
+.optionImage {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.selected {
+  background-color: #e0e0e0;
+  border-color: #c28840; /* Destaque para itens selecionados */
+  font-weight: bold;
 }

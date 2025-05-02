@@ -1,43 +1,46 @@
 .newsContainer {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .title {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .newsItem {
-    margin-bottom: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    text-align: left;
-  }
-  
-  .newsTitle {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .newsDate {
-    font-size: 0.9rem;
-    color: #999;
-    margin-bottom: 10px;
-  }
-  
-  .newsContent {
-    font-size: 1rem;
-    color: #666;
-  }
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background: transparent;
+  color: #c28840; /* Texto dourado */
+}
 
-  /* Media query para telas menores */
+.title {
+  font-size: 2.5rem;
+  color: #c28840; /* Título dourado */
+  margin-bottom: 20px;
+}
+
+.newsItem {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #c28840; /* Borda dourada */
+  border-radius: 5px;
+  background-color: #111; /* Fundo preto mais claro */
+  text-align: left;
+  box-shadow: 0 0 10px #c28840; /* Sutil brilho dourado */
+}
+
+.newsTitle {
+  font-size: 1.5rem;
+  color: #c28840; /* Título dourado */
+  margin-bottom: 10px;
+}
+
+.newsDate {
+  font-size: 0.9rem;
+  color: #999; /* Data em cinza claro */
+  margin-bottom: 10px;
+}
+
+.newsContent {
+  font-size: 1rem;
+  color: #c28840; /* Conteúdo dourado */
+}
+
+/* Media query para telas menores */
 @media (max-width: 768px) {
   .title {
       font-size: 2rem;

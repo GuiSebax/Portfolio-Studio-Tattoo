@@ -6,22 +6,23 @@ const About = () => {
     <div className={styles.aboutContainer}>
       <h1 className={styles.title}>Sobre Nós</h1>
       <p className={styles.description}>
-        Bem-vindo ao Tattoo Studio, onde a arte ganha vida na sua pele. Nosso
-        estúdio é dedicado a criar tatuagens únicas e personalizadas que
-        refletem a individualidade de cada cliente.
+        Bem-vindo à nossa loja de roupas, um espaço pensado para quem valoriza
+        estilo, autenticidade e conforto. Aqui, cada peça é escolhida com
+        carinho para ajudar você a se expressar através da moda.
       </p>
       <h2 className={styles.subtitle}>Nossa História</h2>
       <p className={styles.text}>
-        Fundado em 2010, o Tattoo Studio tem se destacado pela qualidade e
-        criatividade de suas tatuagens. Nossa equipe de artistas talentosos está
-        comprometida em proporcionar uma experiência excepcional para cada
-        cliente.
+        A ideia nasceu de forma inesperada — quase do nada. Foi em uma conversa
+        despretensiosa que surgiu a vontade de criar um lugar onde moda e
+        identidade se encontrassem de forma leve e acessível. E assim, a loja
+        tomou forma, unindo paixão, criatividade e muito trabalho.
       </p>
-      <h2 className={styles.subtitle}>Nossos Artistas</h2>
+      <h2 className={styles.subtitle}>Nosso Estilo</h2>
       <p className={styles.text}>
-        Nossa equipe é composta por artistas experientes e apaixonados pela arte
-        da tatuagem. Cada um traz seu próprio estilo e especialidade, garantindo
-        que você encontre o artista perfeito para sua próxima tatuagem.
+        Trabalhamos com roupas casuais, modernas e versáteis, sempre atentos às
+        tendências, mas sem abrir mão do que realmente importa: vestir bem e se
+        sentir bem. Nossa curadoria prioriza qualidade, conforto e peças que
+        falam por si só.
       </p>
     </div>
   );

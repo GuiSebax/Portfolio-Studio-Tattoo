@@ -17,7 +17,7 @@
 .navbar a {
     position: relative;
     text-decoration: none;
-    color: black;
+    color: #c28840; /* Texto dourado */
     font-size: 20px;
     font-weight: bold;
     padding: 5px;
@@ -26,7 +26,6 @@
     transition: color 0.3s ease-in-out;
 }
 
-
 .navbar a::after {
     content: '';
     position: absolute;
@@ -34,7 +33,7 @@
     left: 0;
     width: 0%;
     height: 2px;
-    background-color: #ff6347;
+    background-color: #c28840; /* Linha dourada */
     transition: width 0.3s ease-in-out;
 }
 
@@ -42,12 +41,14 @@
     width: 100%;
 }
 
-
-
-.navbar a:hover {
-    color: #ff6347;
+img {
+    border-radius: 20px;
+    box-shadow: 0 0 10px #c28840;
 }
 
+.navbar a:hover {
+    color: #d88e5d; /* Texto preto ao passar o mouse */
+}
 
 .nav {
     width: 100%;
@@ -109,11 +110,9 @@
 }
 
 @media (min-width: 810px) and (max-width: 1080px) {
-   
-    /* NavBAr na horizoontal com wrap no centro */
+    /* NavBar na horizontal com wrap no centro */
     .navbar {
         flex-direction: row;
-        width: 80%;
+        width: 100%;
     }
-  
-  }
+}

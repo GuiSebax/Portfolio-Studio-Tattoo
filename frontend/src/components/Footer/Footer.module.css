@@ -4,8 +4,8 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background-color: #333;
-  color: #fff;
+  background-color: #000; /* Fundo preto */
+  color: #c28840; /* Texto dourado */
   text-align: center;
   width: 100%;
   position: relative;
@@ -20,24 +20,33 @@
 }
 
 .icon {
-  color: #fff;
+  color: #c28840; /* Ícones dourados */
   transition: color 0.3s ease-in-out;
   cursor: pointer;
 }
 
 .icon:hover {
-  color: #ff6347; /* Cor de destaque ao passar o mouse */
+  color:#c28840; /* Ícones mudam para preto ao passar o mouse */
 }
 
 @media (max-width: 768px) {
   .footer {
-    flex-direction: column;
-    text-align: center;
-    font-size: 10px;
-
+      flex-direction: column;
+      text-align: center;
+      font-size: 10px;
   }
 
   .socialIcons {
-    justify-content: center;
+      justify-content: center;
   }
+}
+
+.emailLink {
+  color: #c28840; /* Ícones dourados */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.emailLink:hover {
+  color: #fff; /* Branco ao passar o mouse */
 }

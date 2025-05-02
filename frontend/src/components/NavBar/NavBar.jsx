@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./NavBar.module.css";
-import Logo from "../../assets/LOGO.png";
+import Logo from "../../assets/LOGO2.png";
 
 import useIsMobile from "../../hooks/useIsMobile";
 
@@ -18,7 +18,7 @@ const NavBar = () => {
               className={({ isActive }) =>
                 isActive ? styles.estaativo : styles.naoestaativo
               }
-              to="/tattoo/?p=home"
+              to="/hyperfit/?p=home"
             >
               Home
             </NavLink>
@@ -28,9 +28,9 @@ const NavBar = () => {
               className={({ isActive }) =>
                 isActive ? styles.estaativo : styles.naoestaativo
               }
-              to="/tattoo/?p=colour"
+              to="/hyperfit/?p=colour"
             >
-              Trabalhos
+              Produtos
             </NavLink>
           </div>
           <div className={styles.nav}>
@@ -38,7 +38,7 @@ const NavBar = () => {
               className={({ isActive }) =>
                 isActive ? styles.estaativo : styles.naoestaativo
               }
-              to="/tattoo/?p=about"
+              to="/hyperfit/?p=about"
             >
               Sobre
             </NavLink>
@@ -48,7 +48,7 @@ const NavBar = () => {
               className={({ isActive }) =>
                 isActive ? styles.estaativo : styles.naoestaativo
               }
-              to="/tattoo/?p=contact"
+              to="/hyperfit/?p=contact"
             >
               Contato
             </NavLink>
@@ -58,7 +58,7 @@ const NavBar = () => {
               className={({ isActive }) =>
                 isActive ? styles.estaativo : styles.naoestaativo
               }
-              to="/tattoo/?p=news"
+              to="/hyperfit/?p=news"
             >
               Novidades
             </NavLink>

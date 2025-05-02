@@ -1,41 +1,43 @@
 .aboutContainer {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .title {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .description {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 20px;
-  }
-  
-  .subtitle {
-    font-size: 2rem;
-    color: #333;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .text {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 20px;
-  }
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background: transparent;
+  color: #c28840; /* Texto dourado */
+}
 
-  @media (min-width: 810px) and (max-width: 1080px) {
-    .aboutContainer {
+.title {
+  font-size: 2.5rem;
+  color: #c28840; /* Título dourado */
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #c28840; /* Texto dourado */
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 2rem;
+  color:#c28840; /* Subtítulo dourado */
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: 1rem;
+  color: #c28840; /* Texto dourado */
+  margin-bottom: 20px;
+}
+
+@media (min-width: 810px) and (max-width: 1080px) {
+  .aboutContainer {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center; 
       height: 65vh;
-    }
   }
+}

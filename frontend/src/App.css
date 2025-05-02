@@ -1,9 +1,34 @@
 body {
     width: 100%;
+    background: linear-gradient(145deg, #0d0d0d, #1a1a1a); /* Preto acinzentado em gradiente */
+    color:#c28840;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
 
 .App {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, #0d0d0d, #1a1a1a); /* Fundo preto */
+    color:#c28840; /* Texto dourado */
+    box-shadow: 0 0 10px#c28840; /* Sutil brilho dourado */
+}
+
+button {
+    background-color: #000; /* Fundo preto */
+    color:#c28840; /* Texto dourado */
+    border: 2px solid#c28840; /* Borda dourada */
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color:#c28840; /* Fundo dourado */
+    color: #000; /* Texto preto */
 }
