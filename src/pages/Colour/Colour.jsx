@@ -2,25 +2,25 @@ import React, { useEffect, useState } from "react";
 import styles from "./Colour.module.css";
 
 // Imagens
-import MascBermudaDuplaTactel from "../../../public/image1.png";
-import MascCamisetaDry from "../../../public/image2.png";
-import MascCamisetaDryTechAthlleisure from "../../../public/image3.png";
-import MascJaquetaTactelTecnosport from "../../../public/image4.png";
-import MascMangaLongaLighttermica2Pele from "../../../public/image5.png";
-import MascRegataDryArmyNeck from "../../../public/image6.png";
-import FemBermudaPowerFit from "../../../public/image7.png";
-import FemCalcaAthenasLight from "../../../public/image8.png";
-import FemCalcaLeggingPeluciada from "../../../public/image9.png";
-import FemCamisetaDryPeccato from "../../../public/image10.png";
-import FemCamisetaFitLine from "../../../public/image11.png";
-import FemLeggingSeamlessMesh from "../../../public/image12.png";
-import FemRegataCropped from "../../../public/image13.png";
-import FemShortDuploDryTech from "../../../public/image14.png";
-import FemShortDuploTactel from "../../../public/image15.png";
-import FemShortSaiaDry from "../../../public/image16.png";
-import FemShortSupermicrofibra from "../../../public/image17.png";
-import FemTopFemininoEstilodoCorpoOpaq from "../../../public/image18.png";
-import FemTopSuperMicroFibra from "../../../public/image19.png";
+import MascBermudaDuplaTactel from "../../assets/image1.png";
+import MascCamisetaDry from "../../assets/image2.png";
+import MascCamisetaDryTechAthlleisure from "../../assets/image3.png";
+import MascJaquetaTactelTecnosport from "../../assets/image4.png";
+import MascMangaLongaLighttermica2Pele from "../../assets/image5.png";
+import MascRegataDryArmyNeck from "../../assets/image6.png";
+import FemBermudaPowerFit from "../../assets/image7.png";
+import FemCalcaAthenasLight from "../../assets/image8.png";
+import FemCalcaLeggingPeluciada from "../../assets/image9.png";
+import FemCamisetaDryPeccato from "../../assets/image10.png";
+import FemCamisetaFitLine from "../../assets/image11.png";
+import FemLeggingSeamlessMesh from "../../assets/image12.png";
+import FemRegataCropped from "../../assets/image13.png";
+import FemShortDuploDryTech from "../../assets/image14.png";
+import FemShortDuploTactel from "../../assets/image15.png";
+import FemShortSaiaDry from "../../assets/image16.png";
+import FemShortSupermicrofibra from "../../assets/image17.png";
+import FemTopFemininoEstilodoCorpoOpaq from "../../assets/image18.png";
+import FemTopSuperMicroFibra from "../../assets/image19.png";
 
 const Colour = () => {
   const [selectedCategory, setSelectedCategory] = useState("masculino");

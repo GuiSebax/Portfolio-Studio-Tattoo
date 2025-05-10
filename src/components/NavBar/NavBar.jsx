@@ -18,7 +18,7 @@ const NavBar = () => {
               className={({ isActive }) =>
                 isActive ? styles.estaativo : styles.naoestaativo
               }
-              to="/hyperfit/?p=home"
+              to="/?p=home"
             >
               Home
             </NavLink>
@@ -28,7 +28,7 @@ const NavBar = () => {
               className={({ isActive }) =>
                 isActive ? styles.estaativo : styles.naoestaativo
               }
-              to="/hyperfit/?p=colour"
+              to="/?p=colour"
             >
               Produtos
             </NavLink>
@@ -38,7 +38,7 @@ const NavBar = () => {
               className={({ isActive }) =>
                 isActive ? styles.estaativo : styles.naoestaativo
               }
-              to="/hyperfit/?p=about"
+              to="/?p=about"
             >
               Sobre
             </NavLink>
@@ -48,7 +48,7 @@ const NavBar = () => {
               className={({ isActive }) =>
                 isActive ? styles.estaativo : styles.naoestaativo
               }
-              to="/hyperfit/?p=contact"
+              to="/?p=contact"
             >
               Contato
             </NavLink>
@@ -58,7 +58,7 @@ const NavBar = () => {
               className={({ isActive }) =>
                 isActive ? styles.estaativo : styles.naoestaativo
               }
-              to="/hyperfit/?p=news"
+              to="/?p=news"
             >
               Novidades
             </NavLink>
